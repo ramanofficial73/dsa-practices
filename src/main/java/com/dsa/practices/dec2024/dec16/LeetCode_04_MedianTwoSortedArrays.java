@@ -5,7 +5,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class LeetCode_04_Median_Two_Sorted_Arrays {
+public class LeetCode_04_MedianTwoSortedArrays {
     public static void main(String[] args) {
         int[] n1 = {1, 2};
         int[] n2 = {3, 4};
