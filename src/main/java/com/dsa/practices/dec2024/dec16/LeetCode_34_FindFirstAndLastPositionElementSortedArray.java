@@ -2,7 +2,7 @@ package com.dsa.practices.dec2024.dec16;
 
 import java.util.Arrays;
 
-public class g {
+public class LeetCode_34_FindFirstAndLastPositionElementSortedArray {
     public static void main(String[] args) {
         int[] data = {5, 7, 7, 8, 8, 10};
         int target = 8;
