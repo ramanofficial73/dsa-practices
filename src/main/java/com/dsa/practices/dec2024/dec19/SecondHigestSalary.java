@@ -1,9 +1,6 @@
 package com.dsa.practices.dec2024.dec19;
 
-import java.util.Arrays;
-import java.util.Comparator;
-import java.util.List;
-import java.util.Optional;
+import java.util.*;
 
 public class SecondHigestSalary {
     public static void main(String[] args) {
@@ -14,6 +11,7 @@ public class SecondHigestSalary {
     public static int getSecondHigestSalary(List<Integer> data){
         Optional<Integer> first = data
                 .stream()
+//                .map(Objects::toString)
                 .distinct()
                 .sorted(Comparator.reverseOrder())
                 .skip(1)
