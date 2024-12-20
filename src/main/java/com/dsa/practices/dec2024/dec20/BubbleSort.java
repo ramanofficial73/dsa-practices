@@ -7,7 +7,7 @@ public class BubbleSort {
         This process is repeated until the list is sorted.
 
         When to Use Bubble Sort?
-        Bubble Sort is not efficient for large datasets due to its O(n2) time complexity.
+        Bubble Sort is not efficient for large datasets due to its O(n^2) time complexity.
         However, it is useful for:
         1. Small datasets.
         2. Teaching purposes to understand basic sorting principles.
@@ -23,13 +23,13 @@ public class BubbleSort {
 
         Time Complexity:
             Best Case: O(n) (when the list is already sorted and no swaps are needed).
-            Worst Case: O(n2) (when the list is sorted in reverse order).
-            Average Case: O(n2)
+            Worst Case: O(n^2) (when the list is sorted in reverse order).
+            Average Case: O(^2)
 
      */
 
     public static void main(String[] args) {
-        int nums[] = {1, 5, 2, 5, 3, 6};
+        int[] nums = {1, 5, 2, 5, 3, 6};
         System.out.print("Before sorting : ");
         for (int num : nums) {
             System.out.print(num + " ");
@@ -47,8 +47,8 @@ public class BubbleSort {
 
     private static void bubbleSort(int[] nums) {
         int temp = 0;
-        for (int i = 0; i < nums.length; i++) {
-            for (int j = 0; j < nums.length - 1; j++) {
+        for (int i = 0; i < nums.length - 1; i++) {
+            for (int j = 0; j < nums.length - i - 1; j++) {
                 if (nums[j] > nums[j + 1]) {
                     temp = nums[j];
                     nums[j] = nums[j + 1];
