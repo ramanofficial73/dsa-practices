@@ -1,4 +1,4 @@
-package com.dsa.practices.dec2024.dec21;
+package com.dsa.practices.dec2024.dec19;
 
 public class SumElementsOfTheArray {
     public static void main(String[] args) {
