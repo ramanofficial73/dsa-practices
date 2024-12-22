@@ -36,7 +36,9 @@ public class DSA_QuickSort {
             System.out.print(num + " ");
         }
 
-        quickSort(nums);
+        int low = 0;
+        int high = nums.length - 1;
+        quickSort(nums, low, high);
 
         System.out.println();
         System.out.print("After sorting : " + " ");
@@ -46,15 +48,30 @@ public class DSA_QuickSort {
         System.out.println();
     }
 
-    private static void quickSort(int[] nums) {
-        for (int i = 1; i < nums.length - 1; i++) {
-            int key = nums[i];
-            int j = i - 1;
-            while (j >= 0 && nums[j] > key) {
-                nums[j + 1] = nums[j];
-                j--;
-            }
-            nums[j + 1] = key;
+    private static void quickSort(int[] nums, int low, int high) {
+        if (low < high) {
+            int pi = partition(nums, low, high);
+            quickSort(nums, low, pi - 1);
+            quickSort(nums, pi + 1, high);
         }
+    }
+
+    private static int partition(int[] nums, int low, int high) {
+        int pi = nums[high];
+        int i = low - 1;  //pivot index
+        for (int j = low; j < high; j++) {
+            if (nums[j] < pi) {
+                i++;
+                int temp = nums[i];
+                nums[i] = nums[j];
+                nums[j] = temp;
+            }
+        }
+
+        i++;
+        int tem = nums[i];
+        nums[i] = pi;
+        nums[high] = tem;
+        return i;
     }
 }
