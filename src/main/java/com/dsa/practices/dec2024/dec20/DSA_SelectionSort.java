@@ -1,6 +1,6 @@
 package com.dsa.practices.dec2024.dec20;
 
-public class SelectionSort {
+public class DSA_SelectionSort {
     /*
         Selection Sort works by repeatedly finding the smallest (or largest) element from
         the unsorted portion of the array and swapping it with the first unsorted element.

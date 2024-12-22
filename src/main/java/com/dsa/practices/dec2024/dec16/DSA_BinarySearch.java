@@ -1,6 +1,6 @@
 package com.dsa.practices.dec2024.dec16;
 
-public class BinarySearch {
+public class DSA_BinarySearch {
 
     /*
        Binary Search is an efficient searching algorithm used to find the position of a target

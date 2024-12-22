@@ -1,6 +1,6 @@
 package com.dsa.practices.dec2024.dec16;
 
-public class LinearSearch {
+public class DSA_LinearSearch {
 
     /*
        Linear Search is the simplest search algorithm used to find an element in a list or array.

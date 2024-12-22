@@ -2,7 +2,7 @@ package com.dsa.practices.dec2024.dec18;
 
 import java.util.Arrays;
 
-public class MergeSort {
+public class DSA_MergeSort {
     /*
 
        Merge Sort is a divide-and-conquer sorting algorithm that works by recursively dividing an
