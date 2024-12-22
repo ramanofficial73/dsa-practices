@@ -4,7 +4,7 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class ReverseArray {
+public class Practices_ReverseArray {
     public static void main(String[] args) {
         int num[] = {2, 4, 21, 1, 11, 5, 7};
         System.out.println("Original Array : " + Arrays.toString(num));

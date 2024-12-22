@@ -3,7 +3,7 @@ package com.dsa.practices.dec2024.dec20;
 import java.util.HashSet;
 import java.util.List;
 
-public class LongestConsecutiveSubsequence {
+public class Practices_LongestConsecutiveSubsequence {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(100, 5, 4, 200, 1, 3, 2, 101, 102, 103);
         int longestSubsequence = findLongestConsecutiveSubsequence(numbers);

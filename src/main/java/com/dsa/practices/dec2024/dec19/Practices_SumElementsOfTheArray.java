@@ -1,6 +1,6 @@
 package com.dsa.practices.dec2024.dec19;
 
-public class SumElementsOfTheArray {
+public class Practices_SumElementsOfTheArray {
     public static void main(String[] args) {
         int num[] = {2, 4, 5, 7};
         System.out.println("Sum of all elements : " + sumOfElements(num));

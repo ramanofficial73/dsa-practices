@@ -4,7 +4,7 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
-public class ValidString {
+public class Practices_ValidString {
     public static void main(String[] args) {
         String data = "{[()]}";
         System.out.println("Valid string is :: " + checkValidString(data));

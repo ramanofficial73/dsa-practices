@@ -1,6 +1,6 @@
 package com.dsa.practices.dec2024.dec16;
 
-public class TimeComplexity {
+public class DSA_TimeComplexity {
     /*
         Time Complexity: Refers to the amount of time an algorithm takes to complete its execution
         as a function of the input size.

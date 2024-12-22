@@ -3,7 +3,7 @@ package com.dsa.practices.dec2024.dec20;
 import java.util.HashMap;
 import java.util.List;
 
-public class FirstNonRepeatingElementInArray {
+public class Practices_FirstNonRepeatingElementInArray {
     public static void main(String[] args) {
         List<Integer> numbers = List.of(100, 5, 4, 200, 1, 3, 1, 100, 102, 103);
         int number = findFirstNonRepeatingElement(numbers);

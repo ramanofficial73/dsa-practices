@@ -1,6 +1,6 @@
 package com.dsa.practices.dec2024.dec21;
 
-public class CheckArrayIsSorted {
+public class Practices_CheckArrayIsSorted {
     public static void main(String[] args) {
         int num[] = {2, 4, 5, 7};
         System.out.println("Is sorted array : " + isSorted(num));

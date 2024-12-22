@@ -3,7 +3,7 @@ package com.dsa.practices.dec2024.dec19;
 import java.util.HashMap;
 import java.util.Map;
 
-public class FindMaxAndMinElementInArray {
+public class Practices_FindMaxAndMinElementInArray {
     public static void main(String[] args) {
         int num[] = {2, 4, 1, 11, 5, 7};
         System.out.println("Max and min values : " + getMinMaxElement(num));

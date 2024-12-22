@@ -2,7 +2,7 @@ package com.dsa.practices.dec2024.dec19;
 
 import java.util.*;
 
-public class SecondHigestSalary {
+public class Practices_SecondHigestSalary {
     public static void main(String[] args) {
         List<Integer> data = Arrays.asList(34,24,242,43,134);
         System.out.println("Salary : " + getSecondHigestSalary(data));

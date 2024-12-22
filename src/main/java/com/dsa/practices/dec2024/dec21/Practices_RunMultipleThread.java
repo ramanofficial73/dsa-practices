@@ -1,8 +1,8 @@
 package com.dsa.practices.dec2024.dec21;
 
-public class RunMultipleThread extends Thread {
+public class Practices_RunMultipleThread extends Thread {
 
-    RunMultipleThread(String threadName) {
+    Practices_RunMultipleThread(String threadName) {
         super(threadName);
     }
 
