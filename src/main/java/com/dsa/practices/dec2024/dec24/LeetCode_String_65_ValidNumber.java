@@ -7,16 +7,14 @@ public class LeetCode_String_65_ValidNumber {
 
     public static boolean isNumberIsNormal(String s) {
         double value = Double.parseDouble(s);
-        return  !Double.isInfinite(value) && !Double.isNaN(value);
+        return !Double.isInfinite(value) && !Double.isNaN(value);
     }
 
     public static boolean isNumber(String s) {
         s = s.trim();
-
         boolean hasDigit = false;
         boolean hasE = false;
         boolean hasDot = false;
-
         for (int i = 0; i < s.length(); i++) {
             char charValue = s.charAt(i);
             if (Character.isDigit(charValue)) {
