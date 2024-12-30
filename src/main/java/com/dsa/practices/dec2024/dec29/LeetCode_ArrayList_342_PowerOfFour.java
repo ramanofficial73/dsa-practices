@@ -1,6 +1,6 @@
 package com.dsa.practices.dec2024.dec29;
 
-public class LeetCode_ArrayList_231_PowerOfFour {
+public class LeetCode_ArrayList_342_PowerOfFour {
     public static void main(String[] args) {
         System.out.println(isPowerOfFour(20));
     }
