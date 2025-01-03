@@ -9,18 +9,19 @@ public class LeetCode_ArrayList_1491_AverageSalaryExcludingMinimumMaximumSalary 
     public static double average(int[] salary) {
         int minSal = salary[0];
         int maxSal = salary[0];
-        int avgSal = salary[0];
+        int sum = salary[0];
 
-        for (int i = 0; i < salary.length; i++) {
-            if (salary[i] < minSal) {
+        for (int i = 1; i < salary.length; i++) {
+            if (minSal > salary[i]) {
                 minSal = salary[i];
-            } else if (salary[i] > maxSal) {
+            }
+            if (maxSal < salary[i]) {
                 maxSal = salary[i];
             }
-            avgSal = avgSal + salary[i];
+            sum = sum + salary[i];
         }
-        avgSal = avgSal - maxSal - minSal;
-        double ans = (double) avgSal / salary.length - 1;
+        sum = sum - maxSal - minSal;
+        double ans = (double) sum / (salary.length - 2);
         return ans;
     }
 
