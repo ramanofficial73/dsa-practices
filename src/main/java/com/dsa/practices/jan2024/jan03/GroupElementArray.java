@@ -1,4 +1,4 @@
-package com.dsa.practices.jan2024.jan01;
+package com.dsa.practices.jan2024.jan03;
 
 import java.util.ArrayList;
 import java.util.HashMap;

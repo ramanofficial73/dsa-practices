@@ -1,4 +1,4 @@
-package com.dsa.practices.jan2024.jan01;
+package com.dsa.practices.jan2024.jan03;
 
 public class LeetCode_ArrayList_977_SquaresSortedArray {
     public static void main(String[] args) {
