@@ -1,6 +1,6 @@
 package com.dsa.practices.jan2024.jan06;
 
-public class LeetCode_ArrayList_2529_MaximumCountPositiveIntegerNegativeInteger {
+public class LeetCode_2529_MaximumCountPositiveIntegerNegativeInteger {
 
     public static void main(String[] args) {
         int[] data = {-2, -1, -1, 1, 2, 3};
