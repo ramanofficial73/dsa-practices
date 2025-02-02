@@ -42,4 +42,8 @@ public class LinkedListImpl {
         }
         return count;
     }
+
+    boolean isEmpty() {
+        return head == null;
+    }
 }
