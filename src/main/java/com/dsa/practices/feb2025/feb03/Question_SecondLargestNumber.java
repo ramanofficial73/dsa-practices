@@ -21,7 +21,7 @@ public class Question_SecondLargestNumber {
     }
     */
 
-    public static int getSecondLarges(int[] nums) {
+    /*public static int getSecondLarges(int[] nums) {
         int largest = nums[0];
         for (int i = 1; i <= nums.length - 1; i++) {
             if (largest < nums[i]) {
@@ -33,6 +33,18 @@ public class Question_SecondLargestNumber {
         for (int i = 0; i <= nums.length - 1; i++) {
             if (secLargest < nums[i] && nums[i] != largest) {
                 secLargest = nums[i];
+            }
+        }
+        return secLargest;
+    }*/
+
+    public static int getSecondLarges(int[] nums) {
+        int largest = nums[0];
+        int secLargest = Integer.MIN_VALUE;
+        for (int i = 1; i <= nums.length - 1; i++) {
+            if (largest < nums[i]) {
+                secLargest = largest;
+                largest = nums[i];
             }
         }
         return secLargest;
