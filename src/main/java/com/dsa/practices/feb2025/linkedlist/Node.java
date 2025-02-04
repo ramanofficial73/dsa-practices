@@ -1,8 +1,8 @@
 package com.dsa.practices.feb2025.linkedlist;
 
-class Node {
-    String data;
-    Node next;
+public class Node {
+    public String data;
+    public Node next;
 
     Node(String data) {
         this.data = data;
