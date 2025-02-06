@@ -2,7 +2,7 @@ package com.dsa.practices.feb2025.stack;
 
 import java.util.Stack;
 
-public class Question_MoveElementInAnotherStackInSameOrder {
+public class Question_Stack_MoveElementInAnotherStackInSameOrder {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
         stack.push(1);
