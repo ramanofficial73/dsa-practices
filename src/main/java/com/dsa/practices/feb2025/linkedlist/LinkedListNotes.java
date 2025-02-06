@@ -1,6 +1,6 @@
 package com.dsa.practices.feb2025.linkedlist;
 
-public class LLNotes {
+public class LinkedListNotes {
     /*
     A Linked List is a linear data structure where elements are stored in nodes,
     and each node points to the next node.
