@@ -29,6 +29,38 @@ public class StackNotes {
     #4. Limited Access → Only the top element can be accessed directly.
     #5. Memory Utilization → Linked list implementation takes extra memory for pointers.
 
+    Stack Hierarchy Flow
+    java.lang.Object → The root class of all Java classes.
+        └── java.util.AbstractCollection<E> → Provides a skeletal implementation of the Collection interface.
+            └── java.util.AbstractList<E> → Provides a base implementation for list-based collections.
+                └── java.util.Vector<E> → A synchronized, growable array of objects.
+                    └── java.util.Stack<E> → A specialized subclass of Vector that implements a LIFO stack.
+
+
+    Stack Internal Working
+    #1. Internal Structure:
+        #a. The Stack<E> class extends Vector<E>,
+        meaning it inherits methods like addElement(), removeElementAt(), and lastElement().
+        #b. It follows the LIFO (Last In, First Out) principle.
+        #c. Internally, elements are stored in a dynamic array that grows as needed.
+
+    #2. Stack Operations & Internal Flow
+        #a. Push Operation (push(E item)):
+        Calls addElement(E item) from Vector, which appends the element to the internal array.
+        If the internal array is full, Vector dynamically increases its size.
+
+        #b. Pop Operation (pop()):
+        Calls peek() to get the last element.
+        Removes the last element using removeElementAt(size() - 1).
+
+        #c. Peek Operation (peek()):
+        Retrieves the last element using elementAt(size() - 1) without removing it.
+
+        #d. isEmpty Operation (isEmpty())
+        Checks if size() == 0.
+
+        #e. Search Operation (search(Object o)):
+        Finds the index of an element using lastIndexOf(o) and returns its position from the top.
 
     */
 }
