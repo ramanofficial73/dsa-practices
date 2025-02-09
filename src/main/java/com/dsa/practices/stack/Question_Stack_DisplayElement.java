@@ -1,4 +1,4 @@
-package com.dsa.practices.feb2025.stack;
+package com.dsa.practices.stack;
 
 import java.util.Stack;
 

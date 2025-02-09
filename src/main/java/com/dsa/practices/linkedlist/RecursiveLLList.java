@@ -1,4 +1,4 @@
-package com.dsa.practices.feb2025.linkedlist;
+package com.dsa.practices.linkedlist;
 
 public class RecursiveLLList {
     public static void main(String[] args) {

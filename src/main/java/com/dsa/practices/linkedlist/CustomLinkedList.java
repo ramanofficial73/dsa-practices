@@ -1,4 +1,4 @@
-package com.dsa.practices.feb2025.linkedlist;
+package com.dsa.practices.linkedlist;
 
 public class CustomLinkedList {
     public static class TestLL{

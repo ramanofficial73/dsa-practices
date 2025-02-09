@@ -1,28 +1,24 @@
-package com.dsa.practices.feb2025.stack;
+package com.dsa.practices.stack;
 
 import java.util.Stack;
 
-public class Question_Stack_InsertElementAtAnyIndex {
+public class Question_Stack_MoveElementInAnotherStackInSameOrder {
     public static void main(String[] args) {
         Stack<Integer> stack = new Stack<>();
-        int idx = 2;
-        int val = 7;
         stack.push(1);
         stack.push(2);
         stack.push(3);
-        stack.push(4);
-        stack.push(5);
         System.out.println("Stack Element : " + stack);
 
         Stack<Integer> temp = new Stack<>();
-        while (stack.size() >= idx) {
+        while (!stack.isEmpty()) {
             temp.push(stack.pop());
         }
 
-        stack.push(val);
+        Stack<Integer> copyStack = new Stack<>();
         while (!temp.isEmpty()) {
-            stack.push(temp.pop());
+            copyStack.push(temp.pop());
         }
-        System.out.println("After Insert Stack Element : " + stack);
+        System.out.println("After Moved Stack Element : " + copyStack);
     }
 }
