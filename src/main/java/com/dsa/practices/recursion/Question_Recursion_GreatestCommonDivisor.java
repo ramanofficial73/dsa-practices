@@ -42,7 +42,9 @@ public class Question_Recursion_GreatestCommonDivisor {
     }
 
 
-    /* Euclidean Algorithm (Efficient) -- Recursion */
+    /* Euclidean Algorithm (Efficient) -- Recursion
+    * Formula: GCD(x, y) = GCD(y, x % y), Base Case: GCD(x, 0) = x
+    * */
     public static int getGCD3(int num1, int num2) {
         if (num2 == 0) {
             return num1;
