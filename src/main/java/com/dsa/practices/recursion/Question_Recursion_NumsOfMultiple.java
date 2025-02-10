@@ -2,7 +2,7 @@ package com.dsa.practices.recursion;
 
 public class Question_Recursion_NumsOfMultiple {
 
-    /* Problem : 3 * (k-1) * */
+    /* Problem : 5 10 15 20 25 30 35 40 */
     public static void main(String[] args) {
         multiple(5, 8);
     }
