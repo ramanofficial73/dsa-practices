@@ -1,20 +1,6 @@
 package com.dsa.practices.tree;
 
 public class TreeImplementation {
-    public static int size;
-
-    public static class Node {
-        int val;
-        Node left;
-        Node right;
-
-        public Node(int val) {
-            this.val = val;
-            this.left = null;
-            this.right = null;
-        }
-    }
-
     public static void main(String[] args) {
         Node root = new Node(4);
         Node a = new Node(1);
@@ -97,7 +83,6 @@ public class TreeImplementation {
         if (root == null) {
             return;
         }
-        size++;
         System.out.print(root.val + " ");
         preorder(root.left);
         preorder(root.right);
