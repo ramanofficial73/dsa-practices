@@ -29,8 +29,11 @@ public class TreeImplementation {
 
         Node e = new Node(3);
         b.right = e;
-        display(root);
-        System.out.println(size(root));
+        preorder(root);
+//        System.out.println(size(root));
+//        System.out.println(sumOfTreeNodes(root));
+        System.out.println();
+        System.out.println(maxValue(root));
     }
 
     public static int size(Node root) {
@@ -38,6 +41,23 @@ public class TreeImplementation {
             return 0;
         }
         return size(root.left) + size(root.right) + 1;
+    }
+
+    public static int maxValue(Node root) {
+        if (root == null) {
+            return Integer.MIN_VALUE;
+        }
+        int a = root.val;
+        int b = maxValue(root.left);
+        int c = maxValue(root.right);
+        return Math.max(a, Math.max(b, c));
+    }
+
+    public static int sumOfTreeNodes(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        return root.val + sumOfTreeNodes(root.left) + sumOfTreeNodes(root.right);
     }
 
     public static void display(Node root) {
@@ -65,7 +85,7 @@ public class TreeImplementation {
             return;
         }
         size++;
-        System.out.print(root.val + "-> ");
+        System.out.print(root.val + " ");
         preorder(root.left);
         preorder(root.right);
     }
