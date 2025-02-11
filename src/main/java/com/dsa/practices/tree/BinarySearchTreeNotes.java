@@ -121,7 +121,6 @@ public class BinarySearchTreeNotes {
     This includes the node’s children, grandchildren, and so on.
     Example: The descendants of node 30 are 20 and 40.
 
-
     #10. Height
     The height of a node is the number of edges from that node to the farthest leaf node.
     Example: The height of 30 is 1 (as it has a child 20 or 40).
@@ -143,6 +142,11 @@ public class BinarySearchTreeNotes {
     #14. Depth
     The depth of a node is the number of edges from the root to the node.
     Example: The depth of 20 is 2 (root 50 → 30 → 20).
+
+    Generic Tree:
+    Binary Tree:
+    Binary Search Tree
+    AVL Tree - Balanced BST
 
     */
 }
