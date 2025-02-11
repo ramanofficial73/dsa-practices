@@ -1,6 +1,8 @@
 package com.dsa.practices.tree;
 
 public class TreeImplementation {
+    public static int size;
+
     public static class Node {
         int val;
         Node left;
@@ -28,11 +30,16 @@ public class TreeImplementation {
         Node e = new Node(3);
         b.right = e;
         display(root);
+        System.out.println(size(root));
     }
 
-    public static void size() {
-
+    public static int size(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        return size(root.left) + size(root.right) + 1;
     }
+
     public static void display(Node root) {
         if (root == null) {
             return;
@@ -51,5 +58,15 @@ public class TreeImplementation {
         System.out.println();
         display(root.left);
         display(root.right);
+    }
+
+    public static void preorder(Node root) {
+        if (root == null) {
+            return;
+        }
+        size++;
+        System.out.print(root.val + "-> ");
+        preorder(root.left);
+        preorder(root.right);
     }
 }
