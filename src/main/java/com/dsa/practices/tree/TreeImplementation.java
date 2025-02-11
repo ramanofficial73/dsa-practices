@@ -34,6 +34,7 @@ public class TreeImplementation {
 //        System.out.println(sumOfTreeNodes(root));
         System.out.println();
         System.out.println(maxValue(root));
+        System.out.println(height(root));
     }
 
     public static int size(Node root) {
@@ -51,6 +52,18 @@ public class TreeImplementation {
         int b = maxValue(root.left);
         int c = maxValue(root.right);
         return Math.max(a, Math.max(b, c));
+    }
+
+    public static int height(Node root) {
+        if (root == null) {
+            return 0;
+        }
+        if (root.left == null && root.right == null) {
+            return 0;
+        }
+        int b = height(root.left);
+        int c = height(root.right);
+        return Math.max(b, c) + 1;
     }
 
     public static int sumOfTreeNodes(Node root) {
