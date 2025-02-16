@@ -27,5 +27,11 @@ public class QueueExample {
         Integer peek = queue.peek();
         System.out.println(peek);
 
+        /* Getting Size */
+        System.out.println(queue.size());
+
+        /* Check Empty */
+        System.out.println(queue.isEmpty());
+
     }
 }
