@@ -17,7 +17,6 @@ public class PrintAllElement {
             Integer peek = queue.poll();
             System.out.print(peek + " ");
             temp.add(peek);
-
         }
 
         while (temp.size() > 0) {
