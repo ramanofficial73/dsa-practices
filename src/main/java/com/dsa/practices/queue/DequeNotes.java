@@ -3,7 +3,7 @@ package com.dsa.practices.queue;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
-public class DequeNotes {
+    public class DequeNotes {
     public static void main(String[] args) {
         /*
         A Deque (Double-Ended Queue) is a special type of queue where you can insert and remove elements from both ends (front and rear).
