@@ -2,16 +2,16 @@ package com.dsa.practices.queue;
 
 import java.util.ArrayList;
 
-public class QueueImplUsingArrayList {
+public class ImplementQueueUsingArrayList {
     private ArrayList<Integer> arrayList;
 
-    QueueImplUsingArrayList() {
+    ImplementQueueUsingArrayList() {
         arrayList = new ArrayList<>();
     }
 
 
     public static void main(String[] args) {
-        QueueImplUsingArrayList queue = new QueueImplUsingArrayList();
+        ImplementQueueUsingArrayList queue = new ImplementQueueUsingArrayList();
         queue.add(1);
         queue.add(2);
         queue.add(3);
@@ -20,7 +20,7 @@ public class QueueImplUsingArrayList {
 
         /* Removing element */
         int delete = queue.delete();
-        System.out.println("Delete Element : " +delete);
+        System.out.println("Delete Element : " + delete);
 
         /* Getting element from the front */
         Integer peek = queue.peek();
@@ -30,7 +30,7 @@ public class QueueImplUsingArrayList {
         System.out.println("Size :" + queue.size());
 
         /* Check Empty */
-        System.out.println( "is Empty queue :" + queue.isEmpty());
+        System.out.println("is Empty queue :" + queue.isEmpty());
 
     }
 
@@ -45,6 +45,7 @@ public class QueueImplUsingArrayList {
             return arrayList.get(0);
         }
     }
+
     public void display() {
         System.out.println("Queue : " + arrayList);
     }
