@@ -13,26 +13,26 @@ public class QueueNotes {
 
     Real-Life Example:
     1. Call Center Support System
-A call center operates on a queue system, where customer calls are answered in a FIFO (First In, First Out) manner.
+    A call center operates on a queue system, where customer calls are answered in a FIFO (First In, First Out) manner.
 
     Ticket Booking System 🎟️
-A ticket booking system follows a queue mechanism where users book tickets, and requests are processed in FIFO (First In, First Out) order.
+    A ticket booking system follows a queue mechanism where users book tickets, and requests are processed in FIFO (First In, First Out) order.
 
     Basic Operations:
     1. Add Element:
-    Method	      Behavior	                            Returns	                                        Throws Exception?
-    offer(E e)	  Inserts an element into the queue.	true if successful, false if queue is full.	    No, safely handles capacity limits.
-    add(E e)	  Inserts an element into the queue.	true if successful.	Yes,                        throws IllegalStateException if queue is full.
+    Method	      Behavior	                                        Returns	                                        Throws Exception?
+    offer(E e)	  Inserts an element into the queue.	            true if successful, false if queue is full.	    No, safely handles capacity limits.
+    add(E e)	  Inserts an element into the queue.	            true if successful.	Yes,                        throws IllegalStateException if queue is full.
 
     2. Get Element:
-    Method	    Behavior	                                        Returns	                                Throws Exception?
-    peek()	    Retrieves the front element without removing it.	Element or null if queue is empty.	    No, returns null if queue is empty.
-    element()	Retrieves the front element without removing it.	Element	                                Yes, throws NoSuchElementException if queue is empty.
+    Method	    Behavior	                                        Returns	                                        Throws Exception?
+    peek()	    Retrieves the front element without removing it.	Element or null if queue is empty.	            No, returns null if queue is empty.
+    element()	Retrieves the front element without removing it.	Element	                                        Yes, throws NoSuchElementException if queue is empty.
 
     3. Delete Element
-    Method	    Behavior	                              Returns	            Throws Exception?
-    remove()	Removes and returns the front element.	  Element	            Yes, if queue is empty (NoSuchElementException).
-    poll()	    Removes and returns the front element.	  Element or null	    No, returns null if queue is empty.
+    Method	    Behavior	                                        Returns	                                        Throws Exception?
+    remove()	Removes and returns the front element.	            Element	                                        Yes, if queue is empty (NoSuchElementException).
+    poll()	    Removes and returns the front element.	            Element or null	                                No, returns null if queue is empty.
 
     4. Check if queue is empty
     isEmpty(): Returns true if queue is empty.
