@@ -9,6 +9,16 @@ public class GCDNumbers {
     public static void main(String[] args) {
         System.out.println("Get GCD with O(n) : " + getGCD(100, 75));
         getGCDWithOptimize(100, 75);
+        System.out.println(gcdEuclidean(100, 75));
+    }
+
+    public static int gcdEuclidean(int a, int b) {
+        while (b != 0) {
+            int temp = b;
+            b = a % b;
+            a = temp;
+        }
+        return a;
     }
 
     public static int getGCD(int num1, int num2) {
