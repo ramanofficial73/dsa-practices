@@ -8,7 +8,7 @@ public class IntersectionOfTwoSortedArray {
         int[] arr1 = {4,9,5};
         int[] arr2 = {9,4,9,8,4};
 
-        System.out.println("Size of union arrays : " + Arrays.toString(intersectionOfTwoArrayByBruteForce(arr1, arr2)));
+        System.out.println("Size of intersection arrays : " + Arrays.toString(intersectionOfTwoArrayByBruteForce(arr1, arr2)));
     }
 
     public static int[] intersectionOfTwoArrayByBruteForce(int[] nums1, int[] nums2) {
